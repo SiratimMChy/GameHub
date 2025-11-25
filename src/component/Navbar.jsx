@@ -74,7 +74,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-end">
-                <a className="btn bg-linear-to-r from-blue-600 to-cyan-600 text-white w-20 rounded-lg">Login</a>
+                <a className="btn bg-linear-to-r from-blue-600 to-cyan-600 text-white w-20 rounded-lg font-bold">Login</a>
             </div>
         </div>
     );
