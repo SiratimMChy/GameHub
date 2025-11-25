@@ -41,7 +41,7 @@ const AllGames = () => {
                                             <img src={sImg} alt="" className="w-7 h-7" />
                                             <h2 className="font-bold text-2xl">{numberFormat(Game?.ratings)}</h2>
                                         </div>
-                                        <button className="btn bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg">View Details</button>
+                                        <button className="btn bg-linear-to-r from-blue-600 to-cyan-600 text-white rounded-lg">View Details</button>
                                     </div>
                                 </div>
                             </div>
