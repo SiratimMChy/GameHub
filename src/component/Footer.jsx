@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="w-full bg-[#0B0B1A] text-white pt-45 pb-10 px-6 relative">
+        <div className="w-full bg-[#0B0B1A] text-white pt-40 pb-10 px-6 relative">
             <div className="max-w-[900px] mx-auto -mt-55 overflow-hidden ">
                 <div className="bg-[linear-gradient(180deg,rgba(19,19,19,0.1)_0%,rgba(19,19,19,0.15)_25%,rgba(19,19,19,0.4)_60%,rgba(19,19,19,0.7)_100%)] p-1 rounded-2xl shadow-xl">
                     <div className="bg-[linear-gradient(135deg,#FFFEE0_0%,#F9FFB0_40%,#FFFFFF_100%)] rounded-2xl p-10 text-center">
