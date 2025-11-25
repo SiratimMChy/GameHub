@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "title": "PUBG Mobile",
+    "coverPhoto": "https://i.ibb.co.com/7dcpyGxq/id1.jpg",
+    "category": "FPS",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG Mobile is an intense, fast-paced battle royale game where players are dropped onto large dynamic maps with the goal of being the last one standing. Participants must gather weapons, armor, and resources while navigating shrinking safe zones, avoiding ambushes, and strategizing movement. Every match offers unique terrain, weather conditions, and unpredictable encounters, requiring quick thinking, tactical decision-making, and precise aiming. Teamwork is crucial in squad mode, while solo players rely entirely on their skill and awareness. The game continuously updates with new content, events, and features, maintaining an engaging, competitive experience for players worldwide.",
+    "ratings": "4.5",
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Fortnite",
+    "coverPhoto": "https://i.ibb.co.com/HTMbKHLm/id2.png",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.epicgames.com/fortnite",
+    "description": "Fortnite is a vibrant, fast-paced battle royale game combining shooting, building, and strategic survival on dynamic maps filled with colorful environments and unpredictable encounters. Players collect weapons, materials, and resources, construct defensive structures, and outlast opponents to become the last survivor. The game includes solo, duo, and squad modes, emphasizing both tactical decision-making and creative problem-solving. Regular updates introduce new skins, events, weapons, and limited-time game modes, keeping gameplay fresh and engaging. Fortnite encourages teamwork, adaptability, and skill mastery, offering competitive tournaments and social interaction, making it one of the most popular and enduring games worldwide.",
+    "ratings": "4.7",
+    "developer": "Epic Games"
+  },
+  {
+    "id": "3",
+    "title": "Call of Duty: Mobile",
+    "coverPhoto": "https://i.ibb.co.com/7JFyJ0pq/id3.jpg",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/mobile",
+    "description": "Call of Duty: Mobile delivers intense, high-quality first-person shooter gameplay on mobile devices, bringing iconic maps, modes, and weapons from the franchise to players worldwide. Participants engage in fast-paced multiplayer battles, including Team Deathmatch, Battle Royale, and Ranked modes, requiring strategy, quick reflexes, and precision aiming. Players can customize their loadouts, unlock weapons, and level up characters to gain tactical advantages. Regular updates introduce seasonal content, new operators, and events that maintain excitement. The game emphasizes teamwork, coordination, and skill, providing a competitive, immersive experience that mirrors the intensity of console and PC versions while optimized for mobile.",
+    "ratings": "4.6",
+    "developer": "Activision"
+  },
+  {
+    "id": "4",
+    "title": "Dota 2",
+    "coverPhoto": "https://i.ibb.co.com/v6J7vWrd/id8.jpg",
+    "category": "MOBA",
+    "downloadLink": "https://www.dota2.com",
+    "description": "Dota 2 is a highly competitive multiplayer online battle arena game where two teams of five players control unique heroes with distinct abilities. Players work together to destroy the opposing team’s Ancient while defending their own. Strategic planning, tactical execution, and precise skill usage are essential for success. Each match offers dynamic maps, evolving objectives, and a variety of heroes to master. Team coordination, timing, and adaptability determine outcomes. The game has a thriving competitive scene with professional tournaments, community events, and regular updates introducing heroes, items, and mechanics, ensuring engaging gameplay for both casual and professional players worldwide.",
+    "ratings": "4.7",
+    "developer": "Valve Corporation"
+  },
+  {
+    "id": "5",
+    "title": "Minecraft",
+    "coverPhoto": "https://i.ibb.co.com/j9HCpgfs/id5.jpg",
+    "category": "Sandbox",
+    "downloadLink": "https://www.minecraft.net",
+    "description": "Minecraft is a limitless sandbox game where players explore vast procedurally generated worlds made of blocks, gathering resources, crafting tools, and constructing structures. Players can create and survive alone or collaborate in multiplayer servers, designing anything from simple homes to elaborate cities. The game offers multiple modes, including Survival, Creative, and Adventure, catering to exploration, creativity, and problem-solving. Dynamic weather, day-night cycles, and hostile mobs challenge players, while the redstone system allows complex engineering and automation. Continuous updates expand gameplay, adding biomes, creatures, and mechanics. Minecraft remains a cultural phenomenon, inspiring creativity, imagination, and collaborative experiences worldwide for all ages.",
+    "ratings": "4.8",
+    "developer": "Mojang Studios"
+  },
+  {
+    "id": "6",
+    "title": "Roblox",
+    "coverPhoto": "https://i.ibb.co.com/MD0PFcVC/id6.jpg",
+    "category": "Sandbox / Creator",
+    "downloadLink": "https://www.roblox.com",
+    "description": "Roblox is a massive online platform that empowers players to create, share, and explore countless user-generated games across various genres. Users can design immersive experiences using Roblox Studio, programming gameplay mechanics, designing environments, and customizing avatars. Players can socialize, compete, and cooperate in diverse virtual worlds, participating in challenges, role-playing adventures, or mini-games. Frequent updates introduce new tools, features, and events, keeping the platform dynamic and engaging. The community-driven approach encourages creativity, learning, and collaboration. Roblox’s accessibility on multiple devices allows players worldwide to experience endless content, fostering social connections, imaginative exploration, and interactive entertainment for users of all ages.",
+    "ratings": "4.4",
+    "developer": "Roblox Corporation"
+  },
+  {
+    "id": "7",
+    "title": "Apex Legends",
+    "coverPhoto": "https://i.ibb.co.com/Tx54KCKD/id7.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.ea.com/games/apex-legends",
+    "description": "Apex Legends is a fast-paced battle royale game set in a futuristic universe where players form squads of three, selecting from unique Legends with distinct abilities. Teams compete to be the last squad standing on a dynamic map filled with weapons, loot, and environmental hazards. Tactical decision-making, communication, and skillful combat are crucial for victory. The game offers regular updates, new Legends, and limited-time modes that maintain excitement. Players must balance aggression with strategy, mastering movement, shooting, and teamwork. Apex Legends is known for its polished gameplay, competitive esports presence, and immersive audiovisual design that captivates fans worldwide.",
+    "ratings": "4.5",
+    "developer": "Respawn Entertainment"
+  },
+  {
+    "id": "8",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://i.ibb.co.com/DHbbCPQs/id4.jpg",
+    "category": "Open World RPG",
+    "downloadLink": "https://genshin.hoyoverse.com",
+    "description": "Genshin Impact is a vast open-world action role-playing game that immerses players in a visually stunning fantasy universe filled with elemental magic, exploration, and challenging battles. Players control a diverse cast of characters, each with unique abilities and elemental powers, to overcome puzzles, dungeons, and bosses. The game encourages strategic combat, character progression, and resource management. Stunning landscapes, dynamic weather, and day-night cycles enhance exploration, while a compelling storyline unfolds through quests and events. Frequent updates introduce new regions, characters, and challenges, ensuring continued engagement and providing both solo and cooperative gameplay opportunities for adventurers around the globe.",
+    "ratings": "4.7",
+    "developer": "HoYoverse"
+  },
+  {
+    "id": "9",
+    "title": "World of Warcraft",
+    "coverPhoto": "https://i.ibb.co.com/dJbVTkn1/id9.jpg",
+    "category": "MMORPG",
+    "downloadLink": "https://worldofwarcraft.com/en-us/battle-for-azeroth",
+    "description": "World of Warcraft: Battle for Azeroth is an expansive MMORPG expansion where players explore new continents, engage in epic quests, and participate in large-scale faction battles. Heroes choose between the Alliance or Horde, unlocking unique storylines, dungeons, and raids while leveling up characters and acquiring powerful gear. The game emphasizes strategy, teamwork, and exploration, offering challenging PvE encounters and competitive PvP modes. Players can join guilds, participate in world events, and tackle cooperative objectives. Regular updates expand the game world, introduce new content, and maintain engagement, making Battle for Azeroth a compelling and enduring MMORPG experience for millions globally.",
+    "ratings": "4.6",
+    "developer": "Blizzard Entertainment"
+  },
+  {
+    "id": "10",
+    "title": "Clash Royale",
+    "coverPhoto": "https://i.ibb.co.com/mCCmmCWg/id10.jpg",
+    "category": "Strategy",
+    "downloadLink": "https://supercell.com/en/games/clashroyale/",
+    "description": "Clash Royale is a real-time strategy game combining card collection, tower defense, and multiplayer battles. Players deploy troops, spells, and buildings from a deck of cards to destroy opposing towers while defending their own. Timing, resource management, and strategic placement are essential for victory. Matches are short but intense, requiring constant adaptation to opponents’ moves and decks. The game features clans, events, and tournaments to foster collaboration and competition. Frequent updates introduce new cards, arenas, and challenges. Clash Royale’s blend of tactical depth, accessibility, and engaging visuals has made it one of the most popular competitive mobile strategy games globally.",
+    "ratings": "4.5",
+    "developer": "Supercell"
+  },
+  {
+    "id": "11",
+    "title": "Among Us",
+    "coverPhoto": "https://i.ibb.co.com/NnVTCvxn/id11.jpg",
+    "category": "Social Deduction",
+    "downloadLink": "https://www.innersloth.com/gameAmongUs.php",
+    "description": "Among Us is a social deduction game where players work together to complete tasks on a spaceship while secretly trying to identify impostors among the crew. The impostors’ goal is to sabotage operations and eliminate crewmates without detection. Players must observe behavior, communicate, and vote strategically during meetings to root out impostors. Each match involves deception, deduction, and teamwork, requiring players to balance trust and suspicion. The game supports online and local multiplayer, fostering social interaction, discussion, and collaboration. Regular updates add new maps, tasks, and cosmetics, keeping gameplay engaging. Among Us has become a cultural phenomenon with players worldwide.",
+    "ratings": "4.3",
+    "developer": "Innersloth"
+  },
+  {
+    "id": "12",
+    "title": "Valorant",
+    "coverPhoto": "https://i.ibb.co.com/qZBSvks/id12.jpg",
+    "category": "Tactical FPS",
+    "downloadLink": "https://playvalorant.com",
+    "description": "Valorant is a tactical first-person shooter combining precise gunplay with unique character abilities in team-based competitive matches. Players choose agents, each with specialized skills, and coordinate strategies to plant or defuse spikes while eliminating opponents. Matches require communication, timing, and accuracy, emphasizing skill and strategy over luck. The game includes ranked and unranked modes, encouraging continuous improvement and competitive play. Frequent updates introduce new agents, maps, and seasonal events, maintaining freshness and engagement. Valorant has a thriving esports scene and a dedicated player base, offering an immersive, challenging, and strategic shooter experience optimized for team coordination and tactical execution.",
+    "ratings": "4.7",
+    "developer": "Riot Games"
+  }
+]
