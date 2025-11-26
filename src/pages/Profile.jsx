@@ -29,9 +29,8 @@ const Profile = () => {
 
 
     return (
-        <div className="flex justify-center items-center pb-20 m-10">
-            <div className="card w-1/2 bg-base-100 shadow-xl p-8">
-
+        <div className="flex justify-center items-center min-h-screen px-4 py-10 md:py-20">
+             <div className="card w-full max-w-md md:max-w-lg bg-base-100 shadow-xl p-4 sm:p-6 md:p-8">
                 <div className="flex flex-col items-center mb-6">
                     <div className="avatar">
                         <div className="w-28 rounded-full">
@@ -51,7 +50,7 @@ const Profile = () => {
 
                 {
                     isOpen && (
-                        <form onSubmit={handleUpdate} className="flex flex-col">
+                        <form onSubmit={handleUpdate} className="flex flex-col gap-4 mt-6">
 
                             <label className="label text-black text-sm font-semibold">Name</label>
                             <input
@@ -73,7 +72,7 @@ const Profile = () => {
                             />
 
                             <button
-                                className="btn bg-linear-to-r from-blue-600 to-cyan-600 text-white font-semibold w-50 mt-6 mx-auto"
+                                className="btn  btn-sm sm:btn-md bg-linear-to-r from-blue-600 to-cyan-600 text-white font-semibold w-50 mt-6 mx-auto"
                                 type="submit"
                             >
                                 Update

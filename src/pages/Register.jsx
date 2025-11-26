@@ -5,10 +5,11 @@ import { updateProfile } from 'firebase/auth';
 import auth from '../firebase/firebase.config';
 import { FcGoogle } from 'react-icons/fc';
 import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router';
 
 const Register = () => {
     const { registrationWithEmailAndPassword, setUser, handleSignupWithGoogle } = useContext(AuthContext);
-
+    const navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
@@ -42,6 +43,7 @@ const Register = () => {
                 }).then(() => {
                     setUser(userCredential.user)
                     toast.success('Registration successful!');
+                    navigate('/');
                 }).catch((error) => {
                     console.log(error);
 
@@ -62,6 +64,7 @@ const Register = () => {
                 const user = result.user;
                 setUser(user);
                 toast.success('Google signup successful!');
+                navigate('/');
             })
             .catch(error => {
                 toast.error(error.message);
@@ -70,34 +73,43 @@ const Register = () => {
     }
 
     return (
-        <div className='items-center justify-center pb-5'>
-            <title>Regisration</title>
-            <div className="flex items-center justify-center p-25">
-                <form onSubmit={handleSubmit} className="fieldset  bg-linear-to-r from-blue-50 to-blue-100 border-base-300 rounded-box w-sm border p-4 px-8">
-                    <fieldset className="fieldset">
+        <div className='flex items-center justify-center pb-15 px-4 '>
+            <title>Registration</title>
+            <div className="flex items-center justify-center w-full max-w-md p-4">
+                <form onSubmit={handleSubmit} className="fieldset bg-linear-to-r from-blue-50 to-blue-100 border-base-300 rounded-box w-full max-w-md border p-4 sm:p-6 md:p-8">
+                    <h2 className="text-2xl md:text-3xl font-bold text-black text-center">Regisration</h2>
+                    <fieldset className="fieldset space-y-1">
                         <label className="label text-black text-sm font-semibold">Name</label>
-                        <input name='name' type="text" className="input validator" placeholder="Enter Your Name" required />
+                        <input name='name' type="text" className="input validator w-full" placeholder="Enter Your Name" required />
+
 
                         <label className="label text-black text-sm font-semibold">Email</label>
-                        <input name='email' type="email" className="input validator" placeholder="Enter Your Email" required />
+                        <input name='email' type="email" className="input validator w-full" placeholder="Enter Your Email" required />
+
 
                         <label className="label text-black text-sm font-semibold">PhotoUrl</label>
-                        <input name='photoUrl' type="link" className="input validator" placeholder="Enter Your PhotoUrl" required />
+                        <input name='photoUrl' type="link" className="input validator w-full" placeholder="Enter Your PhotoUrl" required />
 
 
                         <span className="label text-black text-sm font-semibold">Password</span>
-                        <input name='password' type="password" className="input validator" placeholder="Enter Your Password" required />
-
+                        <input name='password' type="password" className="input validator w-full" placeholder="Enter Your Password" required />
                     </fieldset>
-                    <button onClick={SignUpWithGoogle} className="btn"><FcGoogle className="text-2xl" /></button>
-                    <div className="flex gap-1 text-sm font-stretch-75%">
-                        <span className='text-black'>Already have an account?</span><Link className='text-blue-600' to="/login">Login</Link>
+
+
+                    <button onClick={SignUpWithGoogle} type="button" className="btn w-full mt-3 flex items-center justify-center">
+                        <FcGoogle className="text-2xl" />
+                    </button>
+
+
+                    <div className="flex gap-1 text-sm mt-3 justify-center">
+                        <span className='text-black'>Already have an account?</span>
+                        <Link className='text-blue-600' to="/login">Login</Link>
                     </div>
 
-                    <button className="btn  bg-linear-to-r from-blue-600 to-cyan-600 text-white font-semibold mt-4" type="submit">Register</button>
+
+                    <button className="btn bg-linear-to-r from-blue-600 to-cyan-600 text-white font-semibold mt-4 w-full" type="submit">Register</button>
                 </form>
             </div>
-
         </div>
     );
 };

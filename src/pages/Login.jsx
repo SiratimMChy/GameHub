@@ -56,34 +56,40 @@ const Login = () => {
 
 
     return (
-        <div className='items-center justify-center pb-10'>
+         <div className='flex items-center justify-center min-h-screen px-4 py-10'>
             <title>Login</title>
-            <div className="flex items-center justify-center p-25">
-                <form onSubmit={handleSubmit} className="fieldset  bg-linear-to-r from-blue-50 to-blue-100 border-base-300 rounded-box w-sm border p-4 px-8">
-                    <fieldset className="fieldset">
-                        <label className="label text-black text-sm font-semibold">Email</label>
-                        <input name='email' type="email" className="input validator" placeholder="Enter Your Email" />
-                        <p className="validator-hint hidden">Required</p>
-                    </fieldset>
+            <form onSubmit={handleSubmit} className="fieldset bg-linear-to-r from-blue-50 to-blue-100 border border-base-300 rounded-box w-full max-w-sm p-4 sm:p-6 md:p-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-black text-center">Login</h2>
+                
+                <fieldset className="fieldset mb-4">
+                    <label className="label text-black text-sm font-semibold">Email</label>
+                    <input name='email' type="email" className="input input-bordered w-full text-sm md:text-base" placeholder="Enter Your Email" required />
+                </fieldset>
 
-                    <label className="fieldset">
-                        <span className="label text-black text-sm font-semibold">Password</span>
-                        <input name='password' type="password" className="input validator" placeholder="Enter Your Password" />
-                        <span className="validator-hint hidden">Required</span>
-                    </label>
+                <fieldset className="fieldset mb-4">
+                    <label className="label text-black text-sm font-semibold">Password</label>
+                    <input name='password' type="password" className="input input-bordered w-full text-sm md:text-base" placeholder="Enter Your Password" required />
+                </fieldset>
 
-                    <div><button type="button" onClick={hanldeforget} className="link link-hover text-sm">Forgot password?</button></div>
+                <div className="mb-4">
+                    <button type="button" onClick={hanldeforget} className="link link-hover text-sm text-blue-600">
+                        Forgot password?
+                    </button>
+                </div>
 
+                <button type="submit" className="btn bg-linear-to-r from-blue-600 to-cyan-600 text-white font-semibold w-full mb-4">
+                    Login
+                </button>
 
-                    <button onClick={SignInWithGoogle} className="btn"><FcGoogle className="text-2xl" /></button>
+                <button type="button" onClick={SignInWithGoogle} className="btn btn-outline w-full mb-4 flex items-center justify-center gap-2">
+                    <FcGoogle className="text-xl md:text-2xl" />
+                </button>
 
-                    <div className="flex gap-1 text-sm ">
-                        <span className='text-black'>Don't have an account?</span><Link className='text-blue-600 link-hover' to="/signup">Register</Link>
-                    </div>
-
-                    <button className="btn  bg-linear-to-r from-blue-600 to-cyan-600 text-white font-semibold mt-4" type="submit">Login</button>
-                </form>
-            </div>
+                <div className="flex gap-1 text-sm justify-center">
+                    <span className='text-black'>Don't have an account?</span>
+                    <Link className='text-blue-600 link link-hover' to="/signup">Register</Link>
+                </div>
+            </form>
         </div>
     );
 };
