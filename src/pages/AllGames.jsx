@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import sImg from "../assets/Star.png";
+import { Link } from 'react-router';
 const AllGames = () => {
     const [games, setGames] = useState([]);
         useEffect(() => {
@@ -41,7 +42,7 @@ const AllGames = () => {
                                             <img src={sImg} alt="" className="w-7 h-7" />
                                             <h2 className="font-bold text-2xl">{numberFormat(Game?.ratings)}</h2>
                                         </div>
-                                        <button className="btn bg-linear-to-r from-blue-600 to-cyan-600 text-white rounded-lg">View Details</button>
+                                        <Link to={`/details/${Game?.id}`} className="btn bg-linear-to-r from-blue-600 to-cyan-600 text-white rounded-lg">View Details</Link>
                                     </div>
                                 </div>
                             </div>

@@ -1,8 +1,19 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router';
 import { NavLink } from 'react-router';
+import { AuthContext } from '../Provider/AuthProvider';
+import { signOut } from 'firebase/auth';
+import auth from '../firebase/firebase.config';
 
 const Navbar = () => {
+
+    const { user } = useContext(AuthContext);
+
+    const handleSignOut = () => {
+        signOut(auth);
+    }
+
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="navbar-start">
@@ -43,7 +54,7 @@ const Navbar = () => {
 
                         <li>
                             <NavLink
-                                to="/myprofile"
+                                to="/profile"
                                 className={({ isActive }) =>
                                     isActive
                                         ? "bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent font-bold"
@@ -69,14 +80,22 @@ const Navbar = () => {
                     <NavLink to="/allgames" className={({ isActive }) => isActive ? "bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent font-bold" : "text-gray-800 font-bold text-lg hover:cursor-pointer hover:text-blue-500"}>
                         AllGames
                     </NavLink>
-                    <NavLink to="/myprofile" className={({ isActive }) => isActive ? "bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent font-bold" : "text-gray-800 font-bold text-lg hover:cursor-pointer hover:text-blue-500"}>
+                    <NavLink to="/profile" className={({ isActive }) => isActive ? "bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent font-bold" : "text-gray-800 font-bold text-lg hover:cursor-pointer hover:text-blue-500"}>
                         My Profile
                     </NavLink>
                 </div>
             </div>
-            <div className="navbar-end">
-                <Link to={'/login'} className="btn bg-linear-to-r from-blue-600 to-cyan-600 text-white w-20 rounded-lg font-bold">Login</Link>
-            </div>
+            {
+                user && <div className="navbar-end">
+                    <button onClick={handleSignOut} className="btn bg-linear-to-r from-blue-600 to-cyan-600 text-white w-20 rounded-lg font-bold">Logout</button>
+                </div>
+            }
+            {
+                !user && <div className="navbar-end">
+                    <Link to={'/login'} className="btn bg-linear-to-r from-blue-600 to-cyan-600 text-white w-20 rounded-lg font-bold">Login</Link>
+                </div>
+            }
+
         </div>
     );
 };
