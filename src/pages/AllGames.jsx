@@ -11,7 +11,7 @@ const AllGames = () => {
                 const sorted = data.sort((a, b) => b.ratings - a.ratings);
                 setGames(sorted);
             })
-            .catch(err => console.log(err));
+            .catch(err =>console.log(err));
     }, []);
     const numberFormat = (n) =>
         new Intl.NumberFormat("en", {

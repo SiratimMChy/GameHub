@@ -7,7 +7,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { toast } from 'react-toastify';
 
 const Register = () => {
-    const { registrationWithEmailAndPassword, setUser, user, handleSignupWithGoogle } = useContext(AuthContext);
+    const { registrationWithEmailAndPassword, setUser, handleSignupWithGoogle } = useContext(AuthContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -55,9 +55,6 @@ const Register = () => {
             })
 
     }
-
-    console.log(user);
-
 
     const SignUpWithGoogle = () => {
         handleSignupWithGoogle()

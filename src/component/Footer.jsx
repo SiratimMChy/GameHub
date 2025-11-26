@@ -67,7 +67,7 @@ const Footer = () => {
             </footer>
 
 
-            <div className="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-5">
+            <div className="text-center text-white text-sm mt-10 border-t border-gray-700 pt-5">
                 ©2025 GameHub. All Rights Reserved.
             </div>
         </div>
