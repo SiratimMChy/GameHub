@@ -28,7 +28,7 @@ const ViewDetails = () => {
                         <h1 className="text-2xl font-bold mb-2">{gameDetails.title}</h1>
                         <p className="text-gray-700 mb-4">{gameDetails.description}</p>
                         <div className="mb-4 text-gray-800 space-y-2">
-                            <div className="flex justify-between text-sm text-gray-800">
+                            <div className="flex flex-row sm:flex-col justify-between text-sm text-gray-800">
                                 <h4 className="text-xl">
                                     <span className="font-semibold">Category: </span>
                                     <span className="text-lg">{gameDetails.category}</span>
@@ -48,9 +48,7 @@ const ViewDetails = () => {
 
                         <a
                             href={gameDetails.downloadLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition"
+                            className="block text-center px-6 py-3  bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition"
                         >
                             Download Game
                         </a>

@@ -18,9 +18,9 @@ const PopularGames = () => {
             maximumFractionDigits: 1,
         }).format(n);
     return (
-        <div className='m-4 pb-25 px-35'>
+        <div className='m-4 p-2 pb-25 lg:px-35 mx-auto'>
             <div>
-                <h3 className='text-center text-2xl lg:text-3xl font-bold pb-5'>Popular Games</h3>
+                <h3 className='text-center text-xl lg:text-3xl font-bold pb-5'>Popular Games</h3>
             </div>
 
              <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-10 justify-items-center'>
