@@ -16,6 +16,7 @@ const ViewDetails = () => {
 
     return (
         <div className="flex justify-center p-10 pb-25">
+            <title>Game Details</title>
             {gameDetails ? (
                 <div className="max-w-4xl w-full bg-white shadow-lg rounded-2xl overflow-hidden ">
                     <img
@@ -56,7 +57,9 @@ const ViewDetails = () => {
                     </div>
                 </div>
             ) : (
-                <p>Loading...</p>
+                <div className="flex justify-center items-center min-h-screen">
+                    <span className="loading loading-spinner loading-lg"></span>
+                </div>
             )}
         </div>
     );

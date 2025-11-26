@@ -7,12 +7,17 @@ import Register from "../pages/Register";
 import Profile from "../pages/Profile";
 import PrivateRoute from "./PrivateRoute";
 import ViewDetails from "../pages/ViewDetails";
+import ForgetPassword from "../pages/ForgetPassword";
+import PopularGames from "../component/PopularGames";
+import ErrorPage from "../pages/ErrorPage";
+
 
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Rootlayout />,
+        errorElement:<ErrorPage/>,
         children: [
             {
                 path: '/',
@@ -31,12 +36,20 @@ const router = createBrowserRouter([
                 element: <Register />
             },
             {
+                path: '/popular',
+                element: <PopularGames />
+            },
+            {
                 path: '/profile',
                 element: <PrivateRoute> <Profile /></PrivateRoute>
             },
             {
                 path: '/details/:id',
                 element: <PrivateRoute> <ViewDetails /></PrivateRoute>
+            },
+            {
+                path: '/forgetpassword/:email',
+                element:<ForgetPassword/>
             },
 
         ]

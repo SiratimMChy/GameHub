@@ -32,7 +32,6 @@ const Profile = () => {
         <div className="flex justify-center items-center pb-20 m-10">
             <div className="card w-1/2 bg-base-100 shadow-xl p-8">
 
-                {/* Avatar + Info */}
                 <div className="flex flex-col items-center mb-6">
                     <div className="avatar">
                         <div className="w-28 rounded-full">

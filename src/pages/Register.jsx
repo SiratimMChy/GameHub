@@ -4,6 +4,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 import { updateProfile } from 'firebase/auth';
 import auth from '../firebase/firebase.config';
 import { FcGoogle } from 'react-icons/fc';
+import { toast } from 'react-toastify';
 
 const Register = () => {
     const { registrationWithEmailAndPassword, setUser, user, handleSignupWithGoogle } = useContext(AuthContext);
@@ -11,17 +12,36 @@ const Register = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
-        const pass = e.target.password.value;
+        const password = e.target.password.value;
         const name = e.target.name.value;
         const photoUrl = e.target.photoUrl.value;
 
-        registrationWithEmailAndPassword(email, pass)
+
+        const uppercase = /[A-Z]/;
+        const lowercase = /[a-z]/;
+
+        if (password.length < 6) {
+            toast.error('Password must be at least 6 characters long.');
+            return;
+        }
+        if (!uppercase.test(password)) {
+            toast.error('Password must contain at least one uppercase letter.');
+            return;
+        }
+        if (!lowercase.test(password)) {
+            toast.error('Password must contain at least one lowercase letter.');
+            return;
+        }
+
+
+        registrationWithEmailAndPassword(email, password)
             .then((userCredential) => {
 
                 updateProfile(auth.currentUser, {
                     displayName: name, photoURL: photoUrl
                 }).then(() => {
                     setUser(userCredential.user)
+                    toast.success('Registration successful!');
                 }).catch((error) => {
                     console.log(error);
 
@@ -30,6 +50,7 @@ const Register = () => {
             })
 
             .catch(error => {
+                toast.error(error.message);
                 console.error(error);
             })
 
@@ -37,14 +58,18 @@ const Register = () => {
 
     console.log(user);
 
-    
+
     const SignUpWithGoogle = () => {
         handleSignupWithGoogle()
             .then(result => {
                 const user = result.user;
                 setUser(user);
+                toast.success('Google signup successful!');
             })
-            .catch(error => console.log(error))
+            .catch(error => {
+                toast.error(error.message);
+                console.error(error);
+            });
     }
 
     return (

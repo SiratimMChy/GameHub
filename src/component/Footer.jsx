@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Footer = () => {
     return (
@@ -27,28 +28,26 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* Footer Section */}
+
             <footer className="max-w-[1100px] mx-auto text-gray-300 grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 text-center md:text-left">
-                {/* About */}
+
                 <div>
                     <h3 className="font-bold text-white mb-3">About Us</h3>
                     <p className="text-sm leading-relaxed">
-                        We are a passionate team dedicated to providing the best services to
-                        our customers.
+                        Game Hub is your ultimate destination for discovering and exploring the latest games. We curate the best gaming experiences and provide comprehensive game reviews, ratings, and details to help you find your next favorite game.
                     </p>
                 </div>
 
-                {/* Quick Links */}
                 <div>
                     <h3 className="font-bold text-white mb-3">Quick Links</h3>
-                    <ul className="space-y-2 text-sm">
-                        <li className="hover:text-white cursor-pointer">Home</li>
-                        <li className="hover:text-white cursor-pointer">Services</li>
-                        <li className="hover:text-white cursor-pointer">About</li>
+                    <ul className="space-y-4 gap-2 text-sm">
+                        <Link to="/"><li className="hover:text-blue-200 cursor-pointer">Home</li></Link>
+                        <Link to="/allgames"><li className="hover:text-blue-200 cursor-pointer">All Games</li></Link>
+                        <Link to="/popular"><li className="hover:text-blue-200 cursor-pointer">Popular Games</li></Link>
                     </ul>
                 </div>
 
-                {/* Subscribe */}
+
                 <div>
                     <h3 className="font-bold text-white mb-3">Subscribe</h3>
                     <p className="text-sm mb-3">
@@ -67,9 +66,9 @@ const Footer = () => {
                 </div>
             </footer>
 
-            {/* Bottom Bar */}
+
             <div className="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-5">
-                ©2024 Your Company. All Rights Reserved.
+                ©2025 GameHub. All Rights Reserved.
             </div>
         </div>
     );
