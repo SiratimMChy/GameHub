@@ -28,7 +28,7 @@ const ViewDetails = () => {
                         <h1 className="text-2xl font-bold mb-2">{gameDetails.title}</h1>
                         <p className="text-gray-700 mb-4 text-justify-inter leading-relaxed text-balance">{gameDetails.description}</p>
                         <div className="mb-4 text-gray-800 space-y-2">
-                            <div className="flex flex-row sm:flex-col justify-between text-sm text-gray-800">
+                            <div className="flex flex-col lg:flex-row justify-between text-sm text-gray-800">
                                 <h5 className="flex gap-2 sm:gap-0.5 text-[16px]">
                                     <span className="font-semibold">Category: </span>
                                     <span className="text-sm mt-0.5">{gameDetails.category}</span>
