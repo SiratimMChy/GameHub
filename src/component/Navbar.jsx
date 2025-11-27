@@ -80,9 +80,14 @@ const Navbar = () => {
                     <NavLink to="/allgames" className={({ isActive }) => isActive ? "bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent font-bold" : "text-gray-800 font-bold text-lg hover:cursor-pointer hover:text-blue-500"}>
                         AllGames
                     </NavLink>
-                    <NavLink to="/profile" className={({ isActive }) => isActive ? "bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent font-bold" : "text-gray-800 font-bold text-lg hover:cursor-pointer hover:text-blue-500"}>
+                    <NavLink to="/profile" className={({ isActive }) => isActive ? "flex items-center gap-2 bg-linear-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent font-bold"
+                        : "flex items-center gap-2 text-gray-800 font-bold text-lg hover:cursor-pointer hover:text-blue-500"}>
+                        {user?.photoURL && (
+                            <img src={user.photoURL} alt="Profile" className="w-7 h-7 rounded-full" />
+                        )}
                         My Profile
                     </NavLink>
+
                 </div>
             </div>
             {

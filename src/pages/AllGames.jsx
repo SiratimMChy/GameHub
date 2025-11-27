@@ -32,7 +32,7 @@ const AllGames = () => {
                         <Motion.div initial={{ scale: 0 }} animate={{
                             scale: 1,
                             transition: { duration: 2 }
-                        }} key={Game.id} className="card bg-base-100 w-96 shadow-sm">
+                        }} key={Game.id} className="card bg-base-100 w-full max-w-lg shadow-sm">
                             <figure>
                                 <img
                                     src={Game?.coverPhoto}

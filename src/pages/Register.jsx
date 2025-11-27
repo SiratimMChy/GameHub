@@ -43,7 +43,6 @@ const Register = () => {
                 }).then(() => {
                     setUser(userCredential.user)
                     toast.success('Registration successful!');
-                    navigate('/');
                 }).catch((error) => {
                     console.log(error);
 
